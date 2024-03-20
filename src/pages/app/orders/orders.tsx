@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/table'
 import { OrderTableRow } from './order-table-row'
 import { OrderTableFilters } from './order-table-filters'
+import { Pagination } from '@/components/paggination'
 
 export function Orders() {
     return (
@@ -19,7 +20,7 @@ export function Orders() {
                 <h1 className="text-3xl font-bold tracking-tight">Pedidos</h1>
             </div>
             <div className="space-y-2.5">
-            <OrderTableFilters />
+                <OrderTableFilters />
 
                 <div className="rounded-md border">
                     <Table>
@@ -41,6 +42,7 @@ export function Orders() {
                             })}
                         </TableBody>
                     </Table>
+                    <Pagination pageIndex={0} totalCount={105} perPage={10} />
                 </div>
             </div>
         </>

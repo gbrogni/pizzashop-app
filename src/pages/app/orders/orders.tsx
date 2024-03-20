@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/table'
 import { OrderTableRow } from './order-table-row'
 import { OrderTableFilters } from './order-table-filters'
-import { Pagination } from '@/components/paggination'
+import { Pagination } from '@/components/pagination'
 
 export function Orders() {
     return (
